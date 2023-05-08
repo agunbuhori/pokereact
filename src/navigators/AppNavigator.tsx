@@ -35,6 +35,7 @@ const AppNavigator = () => {
     },
     headerTintColor: 'white',
     cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+    title: 'Pokereact',
   };
 
   return (
