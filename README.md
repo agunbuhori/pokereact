@@ -49,10 +49,6 @@ Follow the steps below to get the app up and running:
   npm run ios
   ```
 
-## Project Structure
-
-The project structure follows a typical React Native app structure:
-
 ## Installed Libraries
 
 This app utilizes the following libraries:
