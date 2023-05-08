@@ -1,7 +1,12 @@
 import React, {createContext} from 'react';
 import AppNavigator from '@app/navigators/AppNavigator';
-import {ColorSchemeName, SafeAreaView, StyleSheet} from 'react-native';
-import {DarkModeColors} from '@app/consts/colors';
+import {
+  ColorSchemeName,
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+} from 'react-native';
+import {DarkModeColors, LightModeColors} from '@app/consts/colors';
 import useAsyncStorageState from '@app/hooks/useAsyncStorageState';
 
 interface ColorSchemaProps {
@@ -22,6 +27,7 @@ const ColorSchemaProvider = () => {
   return (
     <ColorSchemaContext.Provider value={{theme, setTheme}}>
       <SafeAreaView style={styles.base}>
+        <StatusBar backgroundColor={LightModeColors.primary} />
         <AppNavigator />
       </SafeAreaView>
     </ColorSchemaContext.Provider>

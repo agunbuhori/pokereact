@@ -4,6 +4,7 @@ import {
   NavigationContainerRef,
 } from '@react-navigation/native';
 import {
+  CardStyleInterpolators,
   StackNavigationOptions,
   createStackNavigator,
 } from '@react-navigation/stack';
@@ -33,6 +34,7 @@ const AppNavigator = () => {
       color: 'white',
     },
     headerTintColor: 'white',
+    cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
   };
 
   return (
