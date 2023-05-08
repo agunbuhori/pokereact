@@ -20,6 +20,7 @@ Follow the steps below to get the app up and running:
 
 2. Install dependencies:
    `cd pokereact` and then `npm install`
+   and also don't forget to run `cd ios && pod install` or `npx pod-install`
 3. Start the development server:
    `yarn start` or `npm start`
 
