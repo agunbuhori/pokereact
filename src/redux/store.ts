@@ -7,7 +7,10 @@ export const store = configureStore({
     [pokemonSlice.reducerPath]: pokemonSlice.reducer,
   },
   middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(pokemonSlice.middleware),
+    getDefaultMiddleware({
+      immutableCheck: false,
+      serializableCheck: false,
+    }).concat(pokemonSlice.middleware),
 });
 
 setupListeners(store.dispatch);
